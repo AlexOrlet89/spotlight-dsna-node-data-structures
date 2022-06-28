@@ -8,5 +8,13 @@ describe("LinkedListNode class", () => {
     expect(list.getList().length).toBe(2);
     list.add("C");
     expect(list.getList().length).toBe(3);
+  })
+
+  it("should remove the last node from our LinkedList", () => {
+    const list = new LinkedList("A");
+    list.add("B");
+    list.add("C");
+    list.removeTail();
+    expect(list.getList().length).toBe(2);
   });
 });
