@@ -18,7 +18,16 @@ class LinkedList {
     }
     current.next = new Node(val);
   }
-  removeTail() {}
+  removeTail() {
+    //start at the second to last 
+    let prev = this.head;
+    let current = this.head.next;
+    while (current.next) {
+      prev = current;
+      current = current.next;
+    }
+    prev.next = null;
+  }
 
   getList() {
     const listArr = [];
