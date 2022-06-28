@@ -10,16 +10,17 @@ Implement `LinkedListNode` as a data structure (a `class`) that has:
 - `next` property (`null` if empty) that points to the next node
 - `add(node)` method that takes a `node` of type `LinkedListNode`. If current node already has `next`, it should use recursion to delegate to the `next` node's `add(node)` method.
 - `getList()` method that returns a string with values in order. Should use recursion to delegate.
+- `removeTail()` pops the last item off the LinkedList.
 
 ## Test Cases
 
 ```js
 const list = new LinkedList("A");
 list.add("B");
-console.log(root.getList()); // 'A B'
+// console.log(root.getList()); // 'A B'
 
 list.add("C");
 list.add("D");
 list.add("E");
-console.log(list.getList()); // 'A B C D E'
+// console.log(list.getList()); // 'A B C D E'
 ```
